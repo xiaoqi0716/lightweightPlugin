@@ -44,7 +44,7 @@ public class PluginActivity extends PluginLoaderActivity {
     }
 
     @Override
-    public String getRawPluginFileName() {
+    public String getAssetsPluginFileName() {
         return PLUGIN_FILE_NAME;
     }
 

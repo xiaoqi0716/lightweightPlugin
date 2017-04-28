@@ -82,7 +82,7 @@ public abstract class PluginLoaderActivity extends PluginBaseActivity implements
         new Thread() {
 
             public void run() {
-                mPluginMgr.loadPlugin(getPluginPackageName(), getRawPluginFileName());
+                mPluginMgr.loadPlugin(getPluginPackageName(), getAssetsPluginFileName());
                 runOnUiThread(new Runnable() {
 
                     @Override
@@ -283,7 +283,7 @@ public abstract class PluginLoaderActivity extends PluginBaseActivity implements
      */
     public abstract String getPluginPackageName();
 
-    public abstract String getRawPluginFileName();
+    public abstract String getAssetsPluginFileName();
 
     public abstract void onLoadPluginBefore();
 
